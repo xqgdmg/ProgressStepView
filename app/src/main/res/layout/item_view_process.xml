@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:minHeight="63dp"
+    android:orientation="horizontal"
+    android:paddingLeft="33dp"
+    android:paddingRight="15dp">
+
+    <!-- 左边的线和图片 -->
+    <LinearLayout
+        android:id="@+id/llStep"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 点上面的线 -->
+        <TextView
+            android:id="@+id/lineTop"
+            android:layout_width="1dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#3d74cf" />
+        <!-- 点 -->
+        <ImageView
+            android:id="@+id/ivDot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shape_oval_blue_bg" />
+        <!-- 点下面的线 -->
+        <TextView
+            android:id="@+id/tvLineBottom"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#3d74cf" />
+    </LinearLayout>
+
+    <!-- 右边的文字 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvTitle"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginBottom="25dp"
+            android:text="好的法律数据点了放假啊类似的开房记录撒快递费家里看电视剧啊弗雷德萨"
+            android:textColor="#646466"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
